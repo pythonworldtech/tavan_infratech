@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zxx">
+   {% load static %}
+   <head>
+      <!-- Title -->
+      <title>Tavan Infratech</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <!-- Favicon -->
+      {% include 'css.html' %}
+   </head>
+   <body>
+      <!-- Skippy -->
+      <a id="skippy" class="sr-only sr-only-focusable u-skippy" href="#content">
+         <div class="container">
+            <span class="u-skiplink-text">Skip to main content</span>
+         </div>
+      </a>
+      <!-- End Skippy -->
+      <!-- Preload -->
+      <div id="loading" class="preloader">
+         <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+         </div>
+      </div>
+      <!-- End Preload -->
+      <!-- Header -->
+      <div class="header-height-bar"></div>
+      {% include 'header.html' %}
+      <!-- Header End -->
+      <!-- Main -->
+      <main>
+         <!-- Home Banner -->
+         {% include 'slider.html' %}
+         <!-- End Home Banner -->
+         <!-- Section -->
+         {% include 'about.html' %}
+         <!-- End Section -->
+         <!-- Section -->
+         {% include 'project.html' %}
+         <!-- End Section -->
+         <!-- Section -->
+         {% include 'services.html' %}
+         <!-- End Section -->
+         <!-- Section -->
+         {% include 'testimonials.html' %}
+         <!-- End Section -->
+      </main>
+      <!-- End Main -->
+      <!-- Footer -->
+      {% include 'footer.html' %}
+      <!-- End Footer -->
+      {% include 'js.html' %}
+   </body>
+   <!-- end body -->
+</html>

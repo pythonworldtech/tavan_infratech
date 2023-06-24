@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zxx">
+   {% load static %}
+   <head>
+      <title>Contact</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      {% include 'css.html' %}
+   </head>
+   <body>
+      <!-- Skippy -->
+      <a id="skippy" class="sr-only sr-only-focusable u-skippy" href="#content">
+         <div class="container">
+            <span class="u-skiplink-text">Skip to main content</span>
+         </div>
+      </a>
+      <!-- End Skippy -->
+      <!-- Preload -->
+      <div id="loading" class="preloader">
+         <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+         </div>
+      </div>
+      <!-- End Preload -->
+      <!-- Header -->
+      <div class="header-height-bar"></div>
+      {% include 'header.html' %}
+      <!-- Header End -->
+      <!-- Main -->
+      <main>
+         <!-- Page Title -->
+         <section class="section parallax effect-section page-heading" style="background-image: url({% static 'main/img/bg-2.jpg' %});">
+            <div class="mask bg-dark opacity-8"></div>
+            <div class="container position-relative">
+               <div class="row align-items-center justify-content-center">
+                  <div class="col-lg-8 text-center">
+                     <h1 class="display-4 text-white m-0">Contact Us</h1>
+                     <ol class="breadcrumb light mb-0 mt-3 justify-content-center">
+                        <li class="breadcrumb-item"><a href="/">Home /</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                     </ol>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- End Page Title -->
+         <!-- Section -->
+         <section class="section">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-12">
+                     <div style="width: 100%;" class="card overflow-hidden">
+                        <div class="card-body">
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.5959115790106!2d77.43405077519438!3d23.221392579034788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c4245467a820b%3A0x90b554d4757f9671!2s277%2C%20E-2%2C%20Arera%20Colony%2C%20Bhopal%2C%20Madhya%20Pradesh%20462016!5e0!3m2!1sen!2sin!4v1684503661300!5m2!1sen!2sin" width="1150" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- End Section -->
+         <!-- Section -->
+         <section>
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-lg-6 bg-gray-100 px-xl-10">
+                     <div class="p-xl-12 p-lg-10 p-4">
+                        <h3 class="h2">Request A Quote</h3>
+                        <form class="rd-mailform mt-5" data-form-output="form-output-global" data-form-type="contact" method="post" action="/contact">
+                           {% csrf_token %}
+                           <div class="row">
+                              <div class="col-sm-6">
+                                 <div class="form-group">
+                                    <label class="form-label" for="contact-name">Your Name</label>
+                                    <input id="contact-name" type="text" name="full_name" data-constraints="@Required" class="form-control">
+                                 </div>
+                              </div>
+                              <div class="col-sm-6">
+                                 <div class="form-group">
+                                    <label class="form-label" for="contact-email">Email</label>
+                                    <input id="contact-email" type="email" name="email" data-constraints="@Required" class="form-control">
+                                 </div>
+                              </div>
+                              <div class="col-sm-12">
+                                 <div class="form-group">
+                                    <label class="form-label" for="contact-subject">Subject</label>
+                                    <input id="contact-subject" type="text" name="subject" data-constraints="@Required" class="form-control">
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <div class="form-group">
+                                    <label class="form-label" for="contact-message">Message</label>
+                                    <textarea class="form-control" id="contact-message" name="message" rows="6" data-constraints="@Required"></textarea>
+                                 </div>
+                              </div>
+                              <div class="col-12">
+                                 <button class="btn btn-primary w-100" type="submit" name="send">Write to us</button>
+                              </div>
+                           </div>
+                        </form>
+                     </div>
+                  </div>
+                  <div class="col-lg-6">
+                     <div class="">
+                        <div class="card-body">
+                           <h5>Office Address</h5>
+                           <ul class="list-unstyled dark-link">
+                              <li class="my-3">
+                                 <a href="#" class="media">
+                                    <div class="icon icon-primary icon-sm rounded-circle">
+                                       <i class="icon-map"></i>
+                                    </div>
+                                    <span class="media-body ps-3">
+                                    TAVAN INFRATECH LLP <br>E-2/92 ,Arera colony ,Bhopal
+                                    </span>
+                                 </a>
+                              </li>
+                              <li class="my-3">
+                                 <a href="#" class="media">
+                                    <div class="icon icon-primary icon-sm rounded-circle">
+                                       <i class="icon-envelope"></i>
+                                    </div>
+                                    <span class="media-body ps-3">
+                                    tavaninfra@gmail.com<br />
+                                    </span>
+                                 </a>
+                              </li>
+                              <li class="my-3">
+                                 <a href="#" class="media">
+                                    <div class="icon icon-primary icon-sm rounded-circle">
+                                       <i class="icon-phone"></i>
+                                    </div>
+                                    <span class="media-body ps-3">
+                                    0755-2462929,4002151<br />
+                                    </span>
+                                 </a>
+                              </li>
+                              <li class="my-3">
+                                 <a href="#" class="media">
+                                    <div class="icon icon-primary icon-sm rounded-circle">
+                                       <i class="icon-phone"></i>
+                                    </div>
+                                    <span class="media-body ps-3">
+                                    +91 8878555230, <br />
+                                    +91 9424439230
+                                    </span>
+                                 </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- End Section -->
+         <!-- End Section -->
+      </main>
+      <!-- End Main -->
+      <!-- Footer -->
+      {% include 'footer.html' %}
+      <!-- End Footer -->
+      {% include 'js.html' %}
+   </body>
+   <!-- end body -->
+</html>

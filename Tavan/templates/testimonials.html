@@ -1,0 +1,114 @@
+{% load static %}
+<style>
+    
+
+    .card-custom {
+        min-width: 15rem;
+        max-height: 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0rem 1rem;
+    }
+
+    .card-img-custom-custom {
+        height: calc(90% - 2rem);
+        width: calc(90% - 2rem);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .card-wraper-custom {
+        width: inherit;
+        display: flex;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+</style>
+<section class="section">
+   <div class="container">
+       <div class="row justify-content-center section-heading">
+           <div class="col-lg-8 col-xl-7 text-center">
+               <!-- <h6 class="text-primary">Our Clients</h6> -->
+               <h3 class="h1">Our Clients</h3>
+           </div>
+       </div>
+       <section class="container border my-5 py-4">
+        <div class="card-wraper-custom" id="card-wraper" style="height: 10rem" behavior="scroll" direction="left" scrollamount="15">
+            
+            <div class="card-custom">
+                <img class="card-img-custom" src="{% static 'main/img/clients/1.png' %}">
+            </div>
+
+            <div class="card-custom">
+                <img class="card-img-custom" src="{% static 'main/img/clients/2.png' %}">
+            </div>
+
+            <div class="card-custom">
+                <img class="card-img-custom" src="{% static 'main/img/clients/3.png' %}">
+            </div>
+
+            <div class="card-custom">
+                <img class="card-img-custom" src="{% static 'main/img/clients/4.png' %}">
+            </div>
+
+            <div class="card-custom">
+                <img class="card-img-custom" src="{% static 'main/img/clients/5.png' %}">
+            </div>
+
+            <div class="card-custom">
+                <img class="card-img-custom" src="{% static 'main/img/clients/6.png' %}">
+            </div>
+            <div class="card-custom">
+                <img class="card-img-custom" src="{% static 'main/img/clients/7.png' %}">
+            </div>
+            <div class="card-custom">
+                <img class="card-img-custom" src="{% static 'main/img/clients/8.png' %}">
+            </div>
+            <div class="card-custom">
+                <img class="card-img-custom" src="{% static 'main/img/clients/9.png' %}">
+            </div>
+            <div class="card-custom">
+                <img class="card-img-custom" src="{% static 'main/img/clients/10.png' %}">
+            </div>
+            <div class="card-custom">
+                <img class="card-img-custom" src="{% static 'main/img/clients/11.png' %}">
+            </div>
+            <div class="card-custom">
+                <img class="card-img-custom" src="{% static 'main/img/clients/12.png' %}">
+            </div>
+            <div class="card-custom">
+                <img class="card-img-custom" src="{% static 'main/img/clients/13.png' %}">
+            </div>
+        </div>
+    </section>
+
+   </div>
+</section>
+
+
+<script>
+    let cardWraper = document.querySelector('#card-wraper');
+    const numberOfCard = 13;
+    const cardWidth = 270;
+    const totalWidth = cardWraper.scrollWidth - cardWraper.offsetWidth;
+
+    window.addEventListener('load', () => {
+        setInterval(() => {
+            cardWraper.scrollLeft += cardWidth
+            if (Math.ceil(cardWraper.scrollLeft) === totalWidth) {
+                cardWraper.scrollLeft = 0;
+            }
+        }, 2000);
+    })
+
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"></script>

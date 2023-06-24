@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zxx">
+{% load static %}
+<head>
+    <title>About</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    {% include 'css.html' %}
+</head>
+
+<body>
+    <!-- Skippy -->
+    <a id="skippy" class="sr-only sr-only-focusable u-skippy" href="#content">
+        <div class="container">
+            <span class="u-skiplink-text">Skip to main content</span>
+        </div>
+    </a>
+    <!-- End Skippy -->
+    <!-- Preload -->
+    <div id="loading" class="preloader">
+        <div class="spinner-border text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- End Preload -->
+    <!-- Header -->
+    <div class="header-height-bar"></div>
+    {% include 'header.html' %}
+    <!-- Header End -->
+    <!-- Main -->
+    <main>
+        <!-- Page Title -->
+        <section class="section parallax effect-section page-heading" style="background-image: url({% static 'main/img/banner.jpg' %});">
+            <div class="mask bg-dark opacity-8"></div>
+            <div class="container position-relative">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h1 class="display-4 text-white m-0">About Us</h1>
+                        <ol class="breadcrumb light mb-0 mt-3 justify-content-center">
+                            <li class="breadcrumb-item"><a href="#">Home /</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">About us</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Page Title -->
+        <!-- Section -->
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 my-3 pe-lg-12">
+                        <h6 class="text-primary">About Us</h6>
+                        <h3 class="h1">Tavan Infratech</h3>
+                        <P class="lead">Tavan Infratech is promoted by experienced entrepreneur and is headed by Mr. Rajendra
+                         Lokwani. He is Civil Engineering graduate of 1980 and has extensive Design and Execution
+                         experience in all facets of Civil Construction with particular focus on Irrigation Projects. </P>
+                         <P class="lead">After graduation he has served for about 33 years with Madhya Pradesh Water Resources
+                             Department and took VRS in September 2014 to join Tavan Infratech, promoted by Mrs.
+                             Chandna Lokwani in year 2010. She is Post graduate in Math's discipline and is responsible for
+                             overall management of the company.</P>
+                         <p class="lead">She is also well versed with CADD and other operating
+                             systems and has been working on various projects in individual capacity for more than ten
+                             years for Survey and Design activities for Irrigation, Roads and Railway projects.</p>
+                         <p class="lead">Tavan Infratech was reconstituted as Limited Liability partnership in January 2017, Directors
+                             being Mr. Rajendra Lokwani, Mrs. Chandna Lokwani and Ms. Tanya Lokwani. </p>
+                         <!-- <h6 class="text-primary">Focus Area</h6>
+                        <ul class="list-type-01 pt-2">
+                            <li>Design and drawing of all Irrigation works, Concrete Dams, Earthen Dams, Spillway, Canal
+                             Network, Canal structures etc</li>
+                            <li>Pressurized Irrigation System, LIS </li>
+                            <li> Road, Bridges for NH, PWD </li>
+                            <li>Tunnel Works </li>
+                            <li>Railway Structures</li>
+                            <li>Hydro Power Project</li>
+                            <li> Building Works</li>
+                            <li>Survey & Investigation including Geotechnical Investigation</li>
+                        </ul> -->
+                        
+                    </div>
+                    <div class="col-lg-6 my-3">
+                                <img src="{% static 'main/img/about_image.jpg' %}" title="" alt="">
+                    </div>
+                </div>
+            </div>
+         </section>
+         {% include 'vision_of_firm.html' %}
+         <!-- End Section -->
+        {% include 'why_choose_us.html' %}
+        <!-- End Section -->
+        <!-- End Section -->
+        {% include 'team.html' %}
+        <!-- End Section -->
+        <!-- End Section -->
+        {% include 'testimonials.html' %}
+        <!-- End Section -->
+    </main>
+    <!-- End Main -->
+    <!-- Footer -->
+    {% include 'footer.html' %}
+    {% include 'js.html' %}
+</body>
+<!-- end body -->
+</html>
